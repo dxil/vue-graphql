@@ -1,8 +1,6 @@
 import axios from 'axios'
 import * as Protobuf from "protobufjs"
 
-axios.defaults.baseURL = 'http://10.10.100.96:8087/wa2';
-
 export const users = {
   login: (name, password) => {
 
