@@ -2,6 +2,7 @@ import axios from 'axios'
 import {baseUrl} from '../config/env'
 import {getStore, setStore} from '../config/mUtils'
 // axios.defaults.baseURL = 'http://'+ window.location.host +'/pms';
+axios.defaults.baseURL = 'http://localhost:2000';
 
 var _headers = {
   'token': getStore('accessToken'),
@@ -17,14 +18,14 @@ var _headers = {
 //   return Promise.reject(error);
 // });
 
-export const Axios = async(type = 'get', url = '', data = {}, headers = {
-  'token': getStore('accessToken'),
-  'adminId': getStore('adminId')
-}) => {
+export const Axios = async(state = '' , type = 'get', url = '', data = {}, headers = {}) => {
   let config = {
     method: type,
     url: url,
     headers: headers
+  }
+  if (state === 'graphql') {
+    // headers
   }
   console.log(config)
   switch (type) {
