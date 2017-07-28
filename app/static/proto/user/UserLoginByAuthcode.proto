@@ -1,0 +1,11 @@
+syntax = "proto3";
+package com.xqopen.iot.water2;
+option java_package = "cn.xqopen.wa2.protobuf";
+
+import "proto/user/PhoneInfo.proto";
+message UserLoginByAuthcode {
+  string accountName = 1; //登录账号
+  string authcode = 2; //验证码
+  string pushToken = 3; //推送token
+  PhoneInfo phoneInfo = 4; //手机信息
+}

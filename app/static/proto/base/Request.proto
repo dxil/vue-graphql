@@ -1,0 +1,10 @@
+syntax = "proto3";
+package com.xqopen.iot.water2;
+option java_package = "cn.xqopen.wa2.protobuf";
+import "google/protobuf/any.proto";
+
+message Request {
+    string token = 1;
+    string account = 2;
+    google.protobuf.Any body = 3;
+}

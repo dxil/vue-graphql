@@ -1,0 +1,17 @@
+syntax = "proto3";
+package com.xqopen.iot.water2;
+option java_package = "cn.xqopen.wa2.protobuf";
+
+message UserMod {
+    fixed64 userId = 1;//用户id
+    string nickname = 2;//用户昵称
+    string newPassword = 3;//用户手机号码
+    string gender =4;//用户性别 女:F  男:M
+    string name =5;//用户姓名
+    string accountName =6;//用户帐号
+    string birthday =7;//生日
+    string email =8;//用户邮箱
+    string address =9;//用户地址
+    string phoneNum =10;//用户手机号码
+    string userImg =11;//用户图像
+}

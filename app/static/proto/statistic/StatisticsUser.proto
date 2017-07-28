@@ -1,0 +1,7 @@
+syntax = "proto3";
+package com.xqopen.iot.water2;
+option java_package = "cn.xqopen.wa2.protobuf";
+message StatisticsUser {
+  string timeRegulation = 1;//统计规则(年，月，周等)
+  sfixed32 userAmount = 2;//用户数量
+}

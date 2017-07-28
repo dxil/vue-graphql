@@ -1,0 +1,9 @@
+syntax = "proto3";
+package com.xqopen.iot.water2;
+option java_package = "cn.xqopen.wa2.protobuf";
+import "proto/user/UserMod.proto";
+
+message UserLoginResp {
+  string token = 1;//登录token
+  UserMod userInfo = 2;//用户信息
+}

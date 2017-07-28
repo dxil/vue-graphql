@@ -1,0 +1,10 @@
+syntax = "proto3";
+package com.xqopen.iot.water2;
+option java_package = "cn.xqopen.wa2.protobuf";
+import "proto/user/UserMod.proto";
+
+message UserResp {
+  sint32 total = 1;//总记录数
+  sint32 pages = 2;//总页数
+  repeated UserMod userInfos = 3;//用户信息列表
+}

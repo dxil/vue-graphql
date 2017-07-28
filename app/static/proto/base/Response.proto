@@ -1,0 +1,10 @@
+syntax = "proto3";
+package com.xqopen.iot.water2;
+option java_package = "cn.xqopen.wa2.protobuf";
+import "google/protobuf/any.proto";
+
+message Response {
+  sfixed32 status = 1; //状态码，0为成功
+  string errMsg = 2; //错误信息，成功为空
+  google.protobuf.Any any = 3;//正确信息，错误时为空
+}

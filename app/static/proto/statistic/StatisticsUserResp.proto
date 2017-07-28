@@ -1,0 +1,8 @@
+syntax = "proto3";
+package com.xqopen.iot.water2;
+option java_package = "cn.xqopen.wa2.protobuf";
+
+import "proto/statistic/StatisticsUser.proto";
+message StatisticsUserResp {
+  repeated StatisticsUser statisticsUsers= 1;
+}

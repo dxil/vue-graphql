@@ -1,0 +1,13 @@
+syntax = "proto3";
+package com.xqopen.iot.water2;
+option java_package = "cn.xqopen.wa2.protobuf";
+
+message PhoneInfo {
+  string phoneId = 1;//设备ID，安卓的DEVICEID，ios的UUID
+  string deviceType = 2;//设备类型 IOS或ANDROID
+  bool isRootOrJailbreak = 3;//是否root或越狱
+  string deviceOs =4;//系统版本,安卓的BUILD.DISPLAY,IOS的version
+  string deviceBrand =5;//设备品牌,安卓的BUILD.BRAND,ios是apple
+  string deviceModel =6;//设备型号,安卓的BUILD.DEVICE,IOS的model
+  string network =7;//运营商 联通CU/电信CT/移动CM/WIFI
+}

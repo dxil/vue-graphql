@@ -1,0 +1,7 @@
+syntax = "proto3";
+package com.xqopen.iot.water2;
+option java_package = "cn.xqopen.wa2.protobuf";
+
+message FeedbackInfo {
+    string feedbackCont = 1;//用户反馈信息
+}
